@@ -10,4 +10,52 @@ body {
 
 .dot {
   position: absolute;
+  animation-duration: 0.8s;
+  animation-fill-mode: forwards;
+  font-size: 2rem;
+}
+
+.dot-1 {
+  animation-name: fall-1;
+}
+
+.dot-2 {
+  animation-name: fall-2;
+}
+
+.dot-3 {
+  animation-name: fall-3;
+}
+
+@keyframes fall-1 {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, 200px) rotate3d(0, 1, 0, 90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-2 {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, 200px) rotate3d(1, 0, 0, 90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes fall-3 {
+  0% {
+    transform: translate(0px, 0px);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(0px, 200px) rotate3d(0, 0, 1, 90deg);
+    opacity: 0;
+  }
 }
